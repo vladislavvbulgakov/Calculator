@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+body {
+    min-height: 100vh;
+    color: #2e2e2e;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color:rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.5);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.5);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.5);
+
+}
+@media(min-width: 768px){
+    .wrapper {
+        height: 50rem;
+        width: 25rem;
+        border-radius: 40px;
+        border:10px solid #201f1f;
+
+    }
+}
+.calc-box {
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows:  minmax(120px, auto) repeat(5,90px);
+    overflow: hidden;
+    min-height: 100%;
+    
+}
+.calc-box__output {
+    grid-column: 1 / -1;
+    /* background-color: gray; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.calc-box__output__previous {
+    color:rgba(255,255,255, .75);
+    font-size: 1.5rem;
+}
+.calc-box__output__current {
+    font-size: 4rem;
+    color: #ffffff;
+}
+button {
+    cursor: pointer;
+    background-color: rgb(64, 64, 64);
+    outline: none;
+    font-size: 2rem;
+    color: #ffffff;
+    border-radius: 50px;
+    margin: 5px;
+    text-align: center;
+}
+.firsttype {
+    background-color: rgb(138, 137, 137);
+}
+.secondtype {
+    background-color:  hsl(35, 100%, 55%);
+    font-size: 2.3rem;
+}
+.btnwithimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc img{
+    width: 32px;
+}
+.delete img {
+    width: 36px;
+}

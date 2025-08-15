@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calc-box">
+            <div class="calc-box__output">
+                <div data-previous-operand  class="calc-box__output__previous"></div>
+                <div data-current-operand class="calc-box__output__current">0</div>
+            </div>
+            <!-- <input readonly  type="text" placeholder="0"  class = "calc-box__result"> -->
+            <button class = "firsttype" data-all-clear>AC</button>
+            <button class = "firsttype btnwithimg delete" data-delete><img src ="img/icons/delete.png"></button>
+            <button class = "firsttype" data-operation>%</button>
+            <button class = "secondtype" data-operation>÷</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button class = "secondtype" data-operation>×</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button class = "secondtype" data-operation>-</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button class = "secondtype" data-operation>+</button>
+            <button class = "btnwithimg calc"><img src ="img/icons/calculator.png"></button>
+            <button data-number>0</button>
+            <button data-number>.</button>
+            <button class = "secondtype" data-equals>=</button>
+        </div>
+    </div>
+<script src = "js/script.js"></script>    
+</body>
+</html>
